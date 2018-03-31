@@ -10,6 +10,8 @@ import com.fastaccess.data.dao.model.Release
 import com.fastaccess.helper.RxHelper
 import com.fastaccess.provider.rest.RestProvider
 
+import es.dmoral.toasty.Toasty;
+
 /**
  * Created by Kosh on 09 Jun 2017, 9:02 PM
  */
@@ -20,8 +22,12 @@ class CheckVersionService : IntentService("CheckVersionService") {
                 .getLatestRelease("k0shk0sh", "FastHub"))
                 .subscribe({ t: Release? ->
                     t?.let {
-                        Toast.makeText(App.getInstance(), if (BuildConfig.VERSION_NAME.contains(it.tagName))
-                            R.string.up_to_date else R.string.new_version, Toast.LENGTH_LONG).show()
+                        // Toast.makeText(App.getInstance(), if (BuildConfig.VERSION_NAME.contains(it.tagName))
+                        //  R.string.up_to_date else R.string.new_version, Toast.LENGTH_LONG).show()
+                        Toasty.info(App.getInstance(), if (BuildConfig.VERSION_NAME.contains(it.tagName))
+                            R.string.up_to_date else R.string.new_version, Toast.LENGTH_LONG, true).show();
+                        //showMessage(App.getInstance(), if (BuildConfig.VERSION_NAME.contains(it.tagName))
+                            //R.string.up_to_date else R.string.new_version)
                     }
                 }, { throwable -> throwable.printStackTrace() })
     }
