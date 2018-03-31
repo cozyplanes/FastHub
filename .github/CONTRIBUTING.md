@@ -35,7 +35,7 @@ If you have any questions, feel free to join our public [Slack](http://rebrand.l
   - `github_secret=` -- your GitHub secret;
   - `redirect_url=` -- the url defined in `AndroidManifest` under `LoginView`.
 
-### Before importation
+### Before importing
 
 - Make sure you are running *Android Studio 3.0 C4* or above;
 - Import *Android Studio Settings* (to follow project's code style) from [this file](https://raw.githubusercontent.com/k0shk0sh/FastHub/master/fasthub_as_settings.jar);
