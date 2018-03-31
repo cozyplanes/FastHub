@@ -162,9 +162,9 @@ public class FastHubAboutActivity extends MaterialAboutActivity {
 
     private void buildApp(Context context, MaterialAboutCard.Builder appCardBuilder) {
         appCardBuilder.addItem(new MaterialAboutActionItem.Builder()
-                .text(getString(R.string.version))
+                .text(getString(R.string.check_updates))
                 .icon(ContextCompat.getDrawable(context, R.drawable.ic_update))
-                .subText(BuildConfig.VERSION_NAME)
+                .subText(getString(R.string.current_version) + BuildConfig.VERSION_NAME)
                 .setOnClickAction(() -> startService(new Intent(this, CheckVersionService.class)))
                 .build())
                 .addItem(ConvenienceBuilder.createRateActionItem(context, ContextCompat.getDrawable(context, R.drawable.ic_star_filled),
