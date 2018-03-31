@@ -13,6 +13,8 @@
    - Make sure the issue doesn't exists, lets keep things clean & tidy here :).  
 -->
 
+<!-- Do not delete this template. Fill it yourself when you are not using the app. -->
+
 **FastHub Version:**  <!-- Don't forget to mention "Enterprise" here if needed. -->  
 **Android Version:**  
 **Device Information:**  
