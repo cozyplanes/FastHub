@@ -8,7 +8,7 @@
 1. [How to contribute. Importing and assembling](#how-to-contribute-importing-and-assembling)
    1. [Custom keys *(optional)*](#custom-keys-optional)
    1. [Before importing into Android Studio](#before-importing-into-android-studio)
-   1. [Before import](#before-importation)
+   1. [Before importing](#before-importing)
    1. [Importing Android Studio project](#importing-android-studio-project)
    1. [Submitting Pull Request](#submitting-pull-request)
 1. [Working with translations](#working-with-translations)
