@@ -602,4 +602,7 @@
     <string name="restart_app_message">Please restart the app</string>
     <string name="menu_label">Menu</string>
     <string name="commit_file_required">No file changes</string>
+           
+    <string name="check_updates">Check for updates</string>
+    <string name="current_version">Current version:</string>
 </resources>
